@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5Td9+/n8vXl5Hn8TEATmcwofSO+rKVN3gVzkwXwsIINp0N7UokdhdEWSGv1MZPf4c8fKzJDMJMSl4cjuj6TesA==",
+  "dgSpecHash": "JO371CP1sykt12++h4F/fWseZbzcX2qhwxi+xow2WMhGnYh7W0i1ek9DhnV1ueA6EMgTJJ71zlD9qAMcEoPNUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alex\\source\\repos\\CloudFileLoader\\CloudFileLoader\\CloudFileLoader.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\selenium.webdriver\\4.0.0\\selenium.webdriver.4.0.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\selenium.webdriver.chromedriver\\94.0.4606.6100\\selenium.webdriver.chromedriver.94.0.4606.6100.nupkg.sha512"
+  ],
   "logs": []
 }

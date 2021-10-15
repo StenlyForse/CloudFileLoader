@@ -1,0 +1,16 @@
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\CloudFileLoader.exe
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\CloudFileLoader.deps.json
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\CloudFileLoader.runtimeconfig.json
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\CloudFileLoader.runtimeconfig.dev.json
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\CloudFileLoader.dll
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\CloudFileLoader.pdb
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.AssemblyInfo.cs
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.csproj.CopyComplete
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.dll
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.pdb
+C:\Users\Alex\source\repos\CloudFileLoader\CloudFileLoader\obj\Debug\netcoreapp3.1\CloudFileLoader.genruntimeconfig.cache
