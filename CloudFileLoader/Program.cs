@@ -42,13 +42,31 @@ namespace CloudFileLoader
 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
 
-            //кликаем по кнопке войти
-            driver.FindElement(By.XPath("//*[contains(@class, 'Button2 Button2_size_l Button2_view_action Button2_width_max Button2_type_submit')]")).Click();
 
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
-            //кликает на кнопку файлы
-            //driver.FindElement(By.XPath(@"/html/body/div[1]/div/div/div[3]/div[2]/div/div[1]/div[2]/a")).Click();
-            driver.FindElement(By.Id("/disk")).Click();
+            //иногда при заходе на диск вылезает баннер с предложением скачать диск, надо его закрывать, поэтому используем блок трай кетч
+            try
+            {
+                //кликаем по кнопке войти
+                driver.FindElement(By.XPath("//*[contains(@class, 'Button2 Button2_size_l Button2_view_action Button2_width_max Button2_type_submit')]")).Click();
+
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
+
+                //кликает на кнопку файлы
+                //driver.FindElement(By.XPath(@"/html/body/div[1]/div/div/div[3]/div[2]/div/div[1]/div[2]/a")).Click();
+                driver.FindElement(By.Id("/disk")).Click();
+            }
+            catch (Exception e)
+            {
+                //закрываем баннер
+                driver.FindElement(By.XPath("/html/body/div[3]/div[2]/div/div/div/div/button")).Click();
+            }
+
+            finally
+            {
+                driver.FindElement(By.Id("/disk")).Click();
+            }
+            
+
 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
 
@@ -117,6 +135,12 @@ namespace CloudFileLoader
             //Console.ReadKey();
 
             driver.Quit();
+
+            //удаляем все файлы из папки
+            foreach(string file in filenames)
+            {
+                File.Delete(file);
+            }
         }
     }
 }
