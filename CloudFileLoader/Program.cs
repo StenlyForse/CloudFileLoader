@@ -66,8 +66,6 @@ namespace CloudFileLoader
                 driver.FindElement(By.Id("/disk")).Click();
             }
             
-
-
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
 
             //кликаем на кнопку "Создать"
@@ -107,17 +105,23 @@ namespace CloudFileLoader
             //получаем все файлы в папке и проходимся по ним, отправляя в кнопку загрузки
             string[] filenames = Directory.GetFiles(directory);
 
+            //если нет файлов в папке
+            if (filenames.Length == 0)
+            {
+                Console.WriteLine("Файлы отсутствуют в папке");
+                driver.Quit();
+                Environment.Exit(0);
+            }
+
             foreach(string file in filenames)
             {
                 loader.SendKeys(file);
             }
 
 
-            //string bodytext = driver.FindElement(By.TagName("body")).Text;
-
             //тут проверяем текст в окошке загрузки, затем проходимся по каждому и кидаем его в загрузку
             string loadtext = driver.FindElement(By.ClassName("uploader-progress__progress-primary")).Text;
-
+            
             bool stop = true;
 
             //ждем пока загрузятся все файлы или выйдет ошибка и прекращаем выполнение => закрываем браузер, выходим из драйвера
@@ -141,6 +145,8 @@ namespace CloudFileLoader
             {
                 File.Delete(file);
             }
+
+            Environment.Exit(0);
         }
     }
 }
