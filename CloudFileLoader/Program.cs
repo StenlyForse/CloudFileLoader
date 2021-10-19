@@ -103,7 +103,9 @@ namespace CloudFileLoader
             //loader.SendKeys(@"D:\Croc\Видео\C#-2021-03-04.mp4");
 
             //получаем все файлы в папке и проходимся по ним, отправляя в кнопку загрузки
-            string[] filenames = Directory.GetFiles(directory);
+            string[] filenames = Directory.GetFiles(directory, "*" ,SearchOption.AllDirectories);
+            string[] fasdf = Directory.GetDirectories(directory);
+
 
             //если нет файлов в папке
             if (filenames.Length == 0)
@@ -140,11 +142,20 @@ namespace CloudFileLoader
 
             driver.Quit();
 
-            //удаляем все файлы из папки
-            foreach(string file in filenames)
+
+            if (loadtext == "Все файлы загружены")
             {
-                File.Delete(file);
+                //удаляем все файлы из папки
+                foreach (string file in filenames)
+                {
+                    File.Delete(file);
+                }
+
+                foreach (string file in fasdf)
+                    Directory.Delete(file);
             }
+
+            Console.WriteLine(loadtext);
 
             Environment.Exit(0);
         }
